@@ -10,11 +10,11 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	  KC_LCTL   ,   KC_LGUI, KC_LALT,                               KC_SPC,                             KC_RALT,    MO(1),  KC_RCTL,    KC_LEFT, KC_DOWN,   KC_RGHT
 		 	    ),
 	[1] = LAYOUT_iso_1u(
-	  KC_PWR    ,     KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,    KC_NO,     KC_NO,   KC_NO,     KC_NO,
-	  KC_NO     ,     KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_MUTE,   KC_VOLD,  KC_VOLU,     RESET,              KC_NO,
+	  KC_PWR    ,     KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO,     KC_NO,    KC_NO,     KC_NO,   KC_NO,     RESET,
+	  KC_NO     ,     KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO, KC_MUTE,   KC_VOLD,  KC_VOLU,C(KC_BSPC),              KC_NO,
 	  KC_NO     ,   RGB_TOG, RGB_MOD, RGB_HUI,  RGB_HUD,  RGB_SAI, RGB_SAD, RGB_VAI, RGB_VAD,   KC_NO,   KC_NO,     KC_NO,    KC_NO,              KC_NO,     KC_NO,
 	  KC_CAPS   ,   RGB_M_P, RGB_M_B, RGB_M_R, RGB_M_SW, RGB_M_SN, RGB_M_K, RGB_M_X, RGB_M_G,   KC_NO,   KC_NO,     KC_NO,    KC_NO,              KC_NO,
 	  KC_NO     ,     KC_NO,   KC_NO,   KC_NO,    KC_NO,    KC_NO,   KC_NO,   KC_NO, KC_MSTP, KC_MRWD, KC_MFFD,   KC_MPLY,    KC_NO,              KC_MS_U,   KC_NO,
-	  KC_NO     ,     KC_NO,   KC_NO,                                KC_NO,                            KC_BTN1,   KC_TRNS,  KC_BTN2,   KC_MS_L,   KC_MS_D, KC_MS_R
+	  KC_NO     ,     KC_NO,   KC_NO,                                RESET,                            KC_BTN1,   KC_TRNS,  KC_BTN2,   KC_MS_L,   KC_MS_D, KC_MS_R
 			    )
 };
