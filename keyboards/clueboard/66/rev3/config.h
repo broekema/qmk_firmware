@@ -16,8 +16,8 @@
 
 /* ROWS: Top to bottom, COLS: Left to right
 */
-#define MATRIX_ROW_PINS { B2, C7, C6, B6, B5, B0, B3, D5, D3, D2 }
-#define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, E6, B1 }
+#define MATRIX_ROW_PINS { B2, C7, C6, B6, B5, B7, B3, D5, D3, D2 }
+#define MATRIX_COL_PINS { F0, F1, F4, F5, F6, F7, B0, B1 }
 #define UNUSED_PINS
 
 /* COL2ROW or ROW2COL */
