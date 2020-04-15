@@ -5,19 +5,17 @@ void matrix_init_kb(void)
 {
     matrix_init_user();
 
-    setPinOutput(TOP_LEDS);
-    setPinOutput(BOTTOM_LEDS);
+    set_layer_0_led();
 }
 
 
-
-void turn_off_leds(void)
-{
-  writePinLow(TOP_LEDS);
-  writePinLow(BOTTOM_LEDS);
+void set_layer_0_led(void) {
+  writePinHigh(LED_PIN_0);
+  writePinLow(LED_PIN_1);
 }
 
-void turn_on_led(pin_t pin)
-{
-    writePinHigh(pin);
+void set_layer_1_led(void) {
+  writePinLow(LED_PIN_0);
+  writePinHigh(LED_PIN_1);
+  
 }
