@@ -325,6 +325,8 @@
                 UCSR1C = _BV(UCSZ11) | _BV(UCSZ10); \
                 sei();                              \
             } while (0)
+#    elif (MCU == STM32F103)
+#        define SERIAL_UART_BAUD 115200
 #    else
 #        error "USART configuration is needed."
 #    endif
