@@ -17,6 +17,7 @@
 #pragma once
 
 #include "config_common.h"
+#include "outputselect.h"
 
 #define VENDOR_ID    0xB33F
 #define PRODUCT_ID   0x0667
@@ -50,3 +51,16 @@
 /* #define BACKLIGHT_PWM_CHANNEL   1 */
 
 /* #define RGB_DI_PIN B9 */
+
+#define SOFT_SERIAL_PIN A9  // USART TX pin
+#define SELECT_SOFT_SERIAL_SPEED 2 // or 0, 2, 3, 4, 5
+                                   //  0: about 460800 baud
+                                   //  1: about 230400 baud (default)
+                                   //  2: about 115200 baud
+                                   //  3: about 57600 baud
+                                   //  4: about 38400 baud
+                                   //  5: about 19200 baud
+#define SERIAL_USART_DRIVER SD1 // USART driver of TX pin. default: SD1
+#define SERIAL_USART_TX_PAL_MODE 7 // Pin "alternate function", see the respective datasheet for the appropriate values for your MCU. default: 7
+
+#define MODULE_RN42 1
